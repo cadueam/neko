@@ -1,0 +1,32 @@
+
+# ===== GERAL =====
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+.env
+arquivos.txt
+
+# ===== BACKEND =====
+/backend/node_modules/
+/backend/uploads/
+/backend/.env
+/backend/coverage/
+/backend/dist/
+/backend/build/
+
+# ===== FRONTEND =====
+/frontend/node_modules/
+/frontend/.env
+/frontend/dist/
+/frontend/.vite/
+/frontend/.cache/
+
+# ===== EDITORES =====
+.vscode/
+.idea/
+*.code-workspace
+
