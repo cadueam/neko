@@ -12,4 +12,4 @@ function Catbox() {
   );
 }
 
-export default Catbox;
+export default Catbotx;
