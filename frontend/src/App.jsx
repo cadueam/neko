@@ -1,36 +1,22 @@
 import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
-import Catbox from "./cat.jsx";
 import "./App.css";
+import MainInfos from "./main-infos.jsx";
+import NekoVideo from "./assets/855282-hd_1280_720_25fps.webm";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-      <Catbox />
-
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <MainInfos />
+      <video
+        className="relative -z-10 w-auto min-w-full min-h-full max-w-none"
+        autoPlay
+        loop
+        muted
+      >
+        <source src={NekoVideo} type="video/webm" />
+      </video>
     </>
   );
 }
